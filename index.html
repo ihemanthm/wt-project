@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>eAttendance - CSE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body{
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0" >ePROXY</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#courses" class="nav-item nav-link">Courses</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="faculty/index.html"><button class="btn signup-btn">Faculty</button></a>
+                <a href="student/index.html"><button class="btn signup-btn">Student</button></a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Navbar End -->
+
+    <!--Carousel Start-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="assets/carousel-1.jpeg" class="d-block w-100 caption-with-opacity" alt="carousel-1_image">
+            <div class="carousel-caption d-none d-md-block text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-10 col-lg-8">
+                            <h1 class="display-3 text-white animated slideInDown">Welcome to Department of CSE</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Computer Scince and Engineering is one of the seven Engineering branches offered by the esteemed RGUKT&nbsp;-&nbsp;RK&nbsp;VALLEY.</p>
+                                <button class="btn btn-success py-md-3 px-md-5 me-3 " onclick="window.open('http://www.rguktrkv.ac.in/Departments.php?view=CS','_blank')">Read More</button>
+                                <button class="btn btn-light py-md-3 px-md-5 me-3 " onclick="customConfirm()">Sign-Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="assets/carousel-2.jpg" class="d-block w-100 caption-with-opacity" alt="carousel-2_image">
+            <div class="carousel-caption d-none d-md-block text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-10 col-lg-8">
+                            <h1 class="display-3 text-white animated slideInDown">The Most Aspiring Branch</h1>
+                            <p class="fs-5 text-white mb-4 pb-2">This is the most desired branch among the students with an annual admissions count of 360 members.</p>
+                            <button class="btn btn-success py-md-3 px-md-5 me-3 " onclick="window.open('http://www.rguktrkv.ac.in/Departments.php?view=CS','_blank')">Read More</button>
+                            <button class="btn btn-light py-md-3 px-md-5 me-3 " onclick="customConfirm()">Sign-Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="assets/carousel-3.jpg" class="d-block w-100 caption-with-opacity" alt="carousel-3_image">
+            <div class="carousel-caption d-none d-md-block text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-10 col-lg-8">
+                            <h1 class="display-3 text-white animated slideInDown">The Best Learning Platform</h1>
+                            <p class="fs-5 text-white mb-4 pb-2">We provide comprehensive courses, fostering knowledge, growth, and career advancement.</p>
+                            <button class="btn btn-success py-md-3 px-md-5 me-3 " onclick="window.open('http://www.rguktrkv.ac.in/Departments.php?view=CS','_blank')">Read More</button>
+                            <button class="btn btn-light py-md-3 px-md-5 me-3 " onclick="customConfirm()">Sign-Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--Carousel End-->
+    
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <h5 class="mb-3">Skilled Instructors</h5>
+                            <p>"Expert instructors are ready to guide you to success."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <h5 class="mb-3">Advanced Classes</h5>
+                            <p>The Pinnacle of advanced educational infrastructure and technology.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <h5 class="mb-3">Real World Projects</h5>
+                            <p>We offer guidance for real-world projects to enhance practical skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <h5 class="mb-3">Trending Domains</h5>
+                            <p>Explore booming domains, charting pathways with us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- About Start -->
+    <section id="about">
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="assets/about.jpeg" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to ePROXY</h1>
+                    <p class="mb-4">Computer science is the heartbeat of the digital age, encompassing the theory, experimentation, and engineering behind computing systems.</p>
+                    <p class="mb-4"> You can learn CS from us with personalized mentorship and access to cutting-edge resources, graduates emerge equipped with the skills and knowledge to thrive in the rapidly evolving landscape of technology.</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0">Skilled Instructors</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0">Advanced Courses</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0">Real World Projects</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0">High Paying jobs</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0">Practical-learning</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0">Amazing Workshops</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" onclick="customConfirm()">Sign-Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- About End -->
+
+
+    <!-- Categories Start -->
+    <section id="courses">
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
+                <h1 class="mb-5">Courses Categories</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="https://en.wikipedia.org/wiki/Software_development" target="_blank">
+                                <img class="img-fluid" src="assets/category1.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0 text-success">Software Development</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="https://en.wikipedia.org/wiki/User_interface" target="_blank">
+                                <img class="img-fluid" src="assets/category2.jpeg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0 text-success">UI/UX Design</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="https://en.wikipedia.org/wiki/Data_science" target="_blank">
+                                <img class="img-fluid" src="assets/category3.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0 text-success">Data Science</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank">
+                        <img class="img-fluid position-absolute w-100 h-100" src="assets/category4.png" alt="" style="object-fit: cover;">
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
+                            <h5 class="m-0 text-success">Machine learning</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories Start -->
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
+                <h1 class="mb-5">Popular Courses</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="assets/course-1.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers?action=enroll#modules" target="_blank" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers?action=enroll" target="_blank" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Enroll Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2">Yaakov Chaikin</small>
+                            <small class="flex-fill text-center border-end py-2">40 Hrs</small>
+                            <small class="flex-fill text-center py-2">112K Students</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="assets/course-2.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="https://www.coursera.org/learn/introduction-to-software-engineering#modules" target="_blank" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="https://www.coursera.org/learn/introduction-to-software-engineering?action=enroll" target="_blank" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Enroll Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h5 class="mb-4">Introduction to Software Development</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2">Rav Ahuja</small>
+                            <small class="flex-fill text-center border-end py-2">14 Hrs</small>
+                            <small class="flex-fill text-center py-2">80K Students</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="assets/course-3.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="https://www.coursera.org/learn/machine-learning-with-python#modules" target="_blank" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="https://www.coursera.org/learn/machine-learning-with-python?action=enroll" target="_blank" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Enroll Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h5 class="mb-4">Introduction to Machine Learning with Python</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2">Joseph Santarcangelo</small>
+                            <small class="flex-fill text-center border-end py-2">13 Hrs</small>
+                            <small class="flex-fill text-center py-2">430K Students</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Courses End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
+                <h1 class="mb-5">Expert Instructors</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/faculty-1.jpeg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-light mx-1" href="https://www.linkedin.com/in/penugonda-ravikumar-1732b4104?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                  </svg></a>
+                                <a class="btn btn-sm-square btn-light mx-1" href="mailto:raviua138@rguktrkv.ac.in"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                  </svg></a>
+                                <a class="btn btn-sm-square btn-light mx-1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                  </svg></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">P Ravi Kumar</h5>
+                            <small>Administrative Officer</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/faculty-2.jpeg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-light mx-1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                  </svg></a>
+                                <a class="btn btn-sm-square btn-light mx-1" href="mailto:mahendra0516@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                  </svg></a>
+                                <a class="btn btn-sm-square btn-light mx-1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                  </svg></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">A Mahendra</h5>
+                            <small>Assistant Professor</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/faculty-3.jpeg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-light mx-1" href="https://www.linkedin.com/in/satyanandaram?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                  </svg></a>
+                                <a class="btn btn-sm-square btn-light mx-1" href="mailto:satyanandaram@rguktrkv.ac.in"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                  </svg></a>
+                                <a class="btn btn-sm-square btn-light mx-1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                  </svg></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">N Satyanandaram</h5>
+                            <small>Assistant Professor</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/faculty-4.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-light mx-1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                  </svg></a>
+                                <a class="btn btn-sm-square btn-light mx-1" href="mailto:ratnamala3784@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                  </svg></a>
+                                <a class="btn btn-sm-square btn-light mx-1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                  </svg></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">C Ratna Kumari</h5>
+                            <small>Assistant Professor</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="mb-5">Our Students Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div id="carouselTestimonial" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="testimonial-item text-center">
+                            <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/student-1.jpeg" style="width: 80px; height: 80px;">
+                            <h5 class="mb-0">Hemanth Kumar M</h5>
+                            <p>AI/ML Engineer</p>
+                            <div class="testimonial-text bg-light text-center p-4">
+                            <p class="mb-0">"Studying CSE opened doors to diverse opportunities, shaping my future."</p>
+                            </div>
+                        </div>
+        
+                      </div>
+                      <div class="carousel-item">
+                        <div class="testimonial-item text-center">
+                            <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/student-2.jpeg" style="width: 80px; height: 80px;">
+                            <h5 class="mb-0">Mannar G S S</h5>
+                            <p>Sr Developer at Amazon</p>
+                            <div class="testimonial-text bg-light text-center p-4">
+                            <p class="mb-0">"CSE's dynamic curriculum equipped me with skills vital for industry."</p>
+                            </div>
+                        </div>
+        
+                      </div>
+                      <div class="carousel-item">
+                        <div class="testimonial-item text-center">
+                            <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/student-3.jpeg" style="width: 80px; height: 80px;">
+                            <h5 class="mb-0">Tharun Yetti</h5>
+                            <p>DEVOPS Engineer</p>
+                            <div class="testimonial-text bg-light text-center p-4">
+                            <p class="mb-0">"Choosing CSE was a transformative decision, leading to limitless possibilities."</p>
+                            </div>
+                        </div>
+        
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="testimonial-item text-center">
+                            <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/student-4.jpeg" style="width: 80px; height: 80px;">
+                            <h5 class="mb-0">Sai Vathsal Vyas B L</h5>
+                            <p>M.Tech student at IIT Bombay</p>
+                            <div class="testimonial-text bg-light text-center p-4">
+                            <p class="mb-0">"CSE's cutting-edge projects honed my problem-solving abilities, preparing me for challenges."</p>
+                            </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+        
+
+    <!-- Footer Start -->
+    <section id="contact">
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="#about">About Us</a>
+                    <a class="btn btn-link" href="mailto:hodcse@rguktrkv.ac.in">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2">CSE Dept, RK Valley, IIIT</p>
+                    <p class="mb-2">+91 7075690330</p>
+                    <p class="mb-2">cse@rguktrkv.ac.in</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" style="overflow: hidden;" href="https://www.linked.com/company/src-rgukt-rkvalley/" target="_blank"><img src="assets/LinkedIn_circular.png" style="object-fit: contain; width: 35px; height: 35px;" alt=""></a>
+                        <a class="btn btn-outline-light btn-social" style="overflow: hidden;" href="mailto:hodcse@rguktrkv.ac.in"><img src="assets/gmail_circular.png" style="object-fit: contain; width: 75px; height: 75px;" alt=""></a>
+                        <a class="btn btn-outline-light btn-social" style="overflow: hidden;" href=""><img src="assets/x_circular.png" style="object-fit: contain; width: 60px; height: 60px;" alt=""></a>
+                        <a class="btn btn-outline-light btn-social" style="overflow: hidden;" href="https://www.instagram.com/rgukt_rkv_cse?igsh=ajE2czN6MGhheW1t" target="_blank"><img src="assets/insta_circular.jpeg" style="object-fit: contain; width: 48px; height: 48px;" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="assets/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="assets/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="assets/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="assets/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="assets/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="assets/course-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">FeedBack</h4>
+                    <p>Your Feedback is highly appreciated...</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"><a href="mailto:cse@rguktrkv.ac.in">Mail Us</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom text-light" href="#">Cse Dept</a>, All Rights Reserved.
+                        Designed By <a class="border-bottom text-light" href="https://htmlcodex.com">Team WTF</a><br><br>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a class="text-light" href="">Home</a>
+                            <a class="text-light" href="#about">About</a>
+                            <a class="text-light" href="#courses">Courses</a>
+                            <a class="text-light" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal" style="display:none;width:30lvw;margin-left:35%;margin-top:6%;overflow:hidden">
+        <div class=" modal-content" style="border:3px solid green;background:lightgray;color:gold">
+          <h3 align="center" class="text-primary">Sign-Up as:</h3>
+        <div class="d-flex" style="justify-content: space-around;">
+            <button class='btn btn-warning text-dark' style="width:30%" onclick="window.location.href='faculty/index.html'">Faculty</button>
+            <button class='btn btn-warning text-dark' style="width:30%;" onclick="window.location.href='student/index.html'">Student</button>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a id=back-to-top href="" style="display: none;" class="btn btn-lg btn-primary btn-lg-square back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+        <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"/>
+      </svg></a>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.documentElement.scrollTop > 20) {
+            document.getElementById("back-to-top").style.display = "block";
+        } else {
+            document.getElementById("back-to-top").style.display = "none";
+        }
+        }
+
+        document.getElementById("back-to-top").onclick = function() {
+            
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        };
+        
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        function customConfirm() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+        }
+
+        function selectRole(role) {
+            alert("You selected " + role + ".");
+            // Perform actions based on the selected role
+            // You can replace the alert with the desired action
+            var modal = document.getElementById("myModal");
+
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById("myModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+        }
+        }
+
+
+        window.onload = function() {
+            // Fade in the body content
+            document.body.style.display = "block";
+            document.body.style.opacity = 0;
+
+            let fadeInInterval = setInterval(function() {
+                // Increase the opacity gradually
+                document.body.style.opacity = parseFloat(document.body.style.opacity) + 0.02;
+
+                // Once opacity reaches 1, stop the interval
+                if (document.body.style.opacity >= 1) {
+                    clearInterval(fadeInInterval);
+                }
+            }, 40); // Adjust the interval for smoother animation
+        };
+    </script>
+</body>
+
+</html>
