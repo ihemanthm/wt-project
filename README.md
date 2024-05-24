@@ -65,8 +65,8 @@ This is a simple web page created using HTML, CSS, PHP, JavaScript, and MySQLi a
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 1](assets/screenshot-1.png)
+![Screenshot 2](assets/screenshot-2.png)
 
 ## Usage
 
