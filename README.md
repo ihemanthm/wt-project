@@ -20,7 +20,7 @@ This is a simple web page created using HTML, CSS, PHP, JavaScript, and MySQLi a
 - You need to install XAMPP for ubuntu and JAM or any other server application for windows
 - You need to complete the server setup as well as database setup.
 - Make sure that you have your database login credentials.
-- Start the server as well as database and in the php files try to modify the credentials by replacing then with yours.
+- Start the server as well as database. Modify the `config.php` file by replacing the credentials with your credentials.
 - Create a database and table named students
   ```bash
     CREATE TABLE students(
@@ -56,12 +56,10 @@ This is a simple web page created using HTML, CSS, PHP, JavaScript, and MySQLi a
     ```
     
 3. Set up your local server environment (e.g., XAMPP, WAMP, MAMP).
+   
+4. Update the database configuration in `config.php` file.
 
-4. Import the provided SQL file into your MySQL database.
-    
-6. Update the database configuration in `config.php` file.
-
-8. Open the project in your web browser (place your files in /opt/lampp/htdocs if you are using ubuntu and open using localhost) .
+5. Open the project in your web browser (place your files in /opt/lampp/htdocs if you are using ubuntu and open using localhost) .
 
 ## Screenshots
 
@@ -82,7 +80,7 @@ Contributions are welcome! Please follow these guidelines:
 - Fork the repository
 - Create a new branch (`git checkout -b feature`)
 - Make your changes
-- Commit your changes (`git commit -am 'Add new feature'`)
+- Commit your changes (`git commit -m 'Add new feature'`)
 - Push to the branch (`git push origin feature`)
 - Create a new Pull Request
 
