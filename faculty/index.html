@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="jquery-3.7.1.min.js"></script>
+    <title>WTF_faculty</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="button-container">
+		<button class="but1"><b>Sign-Up</b></button>
+		<button class="but2"><b>Log-In</b></button>
+    </div>
+	<div class="container">
+		<div class="signup">
+		    <form method="post" action="dbconnect.php">
+		        <h1>SIGN-UP</h1>
+		        <label for="username">Username</label>
+		        <input type="text" id="username" name="username" required pattern="F[0-9]{6}">
+				<label for="password">Password</label>
+		        <input type="password" id="password" name="password" required>
+				<label>Gender</label>
+				<div style="display: flex;flex-direction: row;">
+					<div style="display:flex;flex-direction: row;">
+						<input type="radio" value="M" name="gender">
+						<label class="radiobut" for="gender">Male</label>
+					</div>
+					<div style="display:flex;flex-direction: row;">
+						<input type="radio" value="F" name="gender">
+						<label class="radiobut" for="gender">Female</label>
+					</div>
+					<div style="display:flex;flex-direction: row;">
+						<input type="radio" value="O" name="gender">
+						<label class="radiobut" for="gender">Trans</label>
+					</div>
+				</div>
+				<div style="display: flex;flex-direction: row;">
+					<div style="display: flex;flex-direction: column;">
+						<label for="name">Name</label>
+		        		<input type="text" class="smallInp" id="name" name="name" required>
+					</div>
+					<div style="display: flex;flex-direction: column;">
+						<label for="subject">Subject</label>
+		        		<input type="text" class="smallInp" id="subject" name="subject" required>
+					</div>
+		        </div>
+				<button type="submit" id="signUpSubmit">Submit</button>
+		    </form>
+		</div>
+		<div class="loginReplace">
+		</div>
+		<div class="login">
+		    <form method="post" action="auth.php">
+		        <h1>LOG-IN</h1>
+		        <label for="username">Username</label>
+		        <input type="text" id="username" name="username" required>
+		        <label for="password">Password</label>
+		        <input type="password" id="password" name="password" required>
+		        <button type="submit" id="logInSubmit">Submit</button>
+		    </form>
+		</div>
+    </div>
+    <script>
+    	document.getElementById("signUpSubmit").addEventListener("click",function(event){
+            const passwordInp=document.getElementById("password");
+            let pwd=passwordInp.value;
+            if(!checkPassword(pwd)){
+                //passwordInp.classList.add("invalid");
+                event.preventDefault();
+                return;
+            }
+            else{
+                //passwordInp.classList.remove("invalid");
+                let sub=confirm("You have submitted your details to register!");
+                if(!sub){
+                    event.preventDefault();
+                }
+            }
+    	});
+    	function checkPassword(password){
+            if(!/[A-Z]/.test(password)){
+                alert("Password must contain atleast one uppercase letter")
+                return false;
+            }
+            if(!/[a-z]/.test(password)){
+                alert("Password must contain atleast one lowercase leetter")
+                return false;
+            }
+            if(!/\d/.test(password)){
+                alert("Password must contain atleast one digit")
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

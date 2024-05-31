@@ -1,0 +1,25 @@
+$(document).ready(function(){
+    $(".login").hide();
+    $(".but2").click(function(){
+        $(".loginReplace").hide();
+        $(".login").hide();
+        $(".but1").css("background-color","white");
+        $(".but1").css("color","black");
+        $(".but2").css("background-color","green");
+        $(".but2").css("color","white");
+        $(".login").fadeIn(1000);
+        $(".signup").fadeOut(10);
+        $(".loginReplace").fadeIn(2000);
+    });
+    $(".but1").click(function(){
+        $(".loginReplace").hide();
+        $(".signup").hide();
+        $(".but2").css("background-color","white");
+        $(".but2").css("color","black");
+        $(".but1").css("background-color","green");
+        $(".but1").css("color","white");
+        $(".signup").fadeIn(2000);
+        $(".login").fadeOut(10);
+        $(".loginReplace").fadeIn(2000);
+    });
+});
