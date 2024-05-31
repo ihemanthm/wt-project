@@ -52,9 +52,10 @@ This is a simple web page created using HTML, CSS, PHP, JavaScript, and MySQLi a
 2.  Clone this repository:
 
     ```bash
-    git clone https://github.com/ihemanthm/.git
+    git clone git@github.com:@username/wt-project.git
     ```
-    
+    replace your github username in place of @username.
+    You can find and copy this url at the code section in ssh tab in your repositories section.
 3. Set up your local server environment (e.g., XAMPP, WAMP, MAMP).
    
 4. Update the database configuration in `config.php` file.
@@ -84,4 +85,8 @@ Contributions are welcome! Please follow these guidelines:
 - Push to the branch (`git push origin feature`)
 - Create a new Pull Request
 
+## Team WTF
 
+- [Mannar GSS](https://github.com/mannar-165)
+- [Tharun Y](https://github.com/TharunYetti)
+- [Hemanth Kumar M](https://github.com/ihemanthm)
