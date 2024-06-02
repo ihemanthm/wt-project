@@ -17,7 +17,7 @@ This is a simple web page created using HTML, CSS, PHP, JavaScript, and MySQLi a
 - JavaScript
 - MySQLi
 ## Pre requirements
-- You need to install XAMPP for ubuntu and JAM or any other server application for windows
+- You need to install XAMPP server application for both windows or Ubuntu.
 - You need to complete the server setup as well as database setup.
 - Make sure that you have your database login credentials.
 - Start the server as well as database. Modify the `config.php` file by replacing the credentials with your credentials.

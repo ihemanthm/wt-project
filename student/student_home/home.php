@@ -22,6 +22,7 @@
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/scroll.css">
 
 </head>
 <body>
@@ -37,13 +38,8 @@
          <div id="menu-btn" class="fas fa-bars"></div>
          <div id="search-btn" class="fas fa-search"></div>
          <div id="toggle-btn" class="fas fa-sun"></div>
-         <div id="user-btn" class="fas fa-right-from-bracket"></div>
-      </div>
-
-      <div class="profile">
-         <form action="logout.php" method="post">
-         	<button type="submit" class="btn" style="background-color:red;color:white">Log Out</button>
-      	</form>
+         <div id="user-btn" class="fa fa-sign-out"></div>
+         
       </div>
 
    </section>
@@ -116,72 +112,121 @@
 </section>
 
 
+<section id="events">
 
-<section class="courses">
+   <h1 class="heading">events</h1>
 
-   <h1 class="heading">useful courses</h1>
+   <div class="slider-container">
+    <div class="slider">
+        <div class="slide">
+            <img src="images/AADHYA.jpg" alt="Image 1">
+            <div class="text">AADHYA - Tech Fest</div>
+        </div>
+        <div class="slide">
+            <img src="images/ANANTHA.jpg" alt="Image 2">
+            <div class="text">ANANTHA - 2k24</div>
+        </div>
+        <div class="slide">
+            <img src="images/ADVAITHA.jpg" alt="Image 3">
+            <div class="text">ADVAITHA - 2k23</div>
+        </div>
+        
+        
+    </div>
+</div>
 
-   <div class="box-container">
+</section>
 
-      <div class="box">
-         <div class="tutor">
-            <img src="images/ibm.webp" alt="">
-            <div class="info">
-               <h3>IBM</h3>
-               <span>Course</span>
-            </div>
+
+<section id="clubs">
+
+    <h1 class="heading">clubs</h1>
+ 
+    <div class="slider-container">
+     <div class="slider">
+         <div class="slide">
+             <img src="images/SRC.jpeg" alt="Image 1">
+             <div class="text">Student Recreation Center</div>
          </div>
-         <div class="thumb">
-            <img src="images/cse.webp" alt="">
-            <span>EdX</span>
+         <div class="slide">
+             <img src="images/AI_ML.jpeg" alt="Image 2">
+             <div class="text">AI / ML</div>
          </div>
-         <h3 class="title">Developing Front End Apps with React</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CAD0210EN" class="inline-btn">Enroll</a>
-      </div>
+         <div class="slide">
+             <img src="images/programming_club.jpeg" alt="Image 3">
+             <div class="text">Programming Club</div>
+         </div>
+         <div class="slide">
+             <img src="images/DS.jpg" alt="Image 4">
+             <div class="text">Data Science</div>
+         </div>
+         <div class="slide">
+             <img src="images/competitive_exam.jpeg" alt="Image 5">
+             <div class="text">Competitive Examination</div>
+         </div>
+         <div class="slide">
+             <img src="images/Software_Development.jpeg" alt="Image 6">
+             <div class="text">Software Development</div>
+         </div>
+         <div class="slide">
+             <img src="images/cyber_security.jpeg" alt="Image 7">
+             <div class="text">Cyber Security</div>
+         </div>
+         <div class="slide">
+             <img src="images/cloud_computing.jpeg" alt="Image 8">
+             <div class="text">Cloud Computing</div>
+         </div>
+         
+     </div>
+ </div>
+ 
+ </section>
 
-      <div class="box">
-         <div class="tutor">
-            <img src="images/codio.webp" alt="">
-            <div class="info">
-               <h3>Codio</h3>
-               <span>Course</span>
-            </div>
-         </div>
-         <div class="thumb">
-            <img src="images/java.webp" alt="">
-            <span>EdX</span>
-         </div>
-         <h3 class="title">Introduction to Java Programming: DSA</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/UC3Mx+IT.1.3x" class="inline-btn">Enroll</a>
-      </div>
+<section id="contests">
 
-      <div class="box">
-         <div class="tutor">
-            <img src="images/w3cx.webp" alt="">
-            <div class="info">
-               <h3>W3CX</h3>
-               <span>Program</span>
-            </div>
-         </div>
-         <div class="thumb">
-            <img src="images/frontend.webp" alt="">
-            <span>EdX | 5 courses</span>
-         </div>
-         <h3 class="title">Front-End Web Developer : Complete Program</h3>
-         <a href="https://enterprise.edx.org/APSCHE/program/98b7344e-cd44-4a99-9542-09dfdb11d31b" class="inline-btn">Enroll</a>
-      </div>
+<h1 class="heading">Contests</h1>
 
+<div class="slider-container">
+ <div class="slider">
+     <div class="slide">
+         <img src="images/hackathon.jpeg" alt="Image 1">
+         <div class="text">Hackathon</div>
+     </div>
+     <div class="slide">
+         <img src="images/debug.avif" alt="Image 2">
+         <div class="text">Debugging</div>
+     </div>
+     <div class="slide">
+         <img src="images/coding.webp" alt="Image 3">
+         <div class="text">Coding</div>
+     </div>
+     <div class="slide">
+         <img src="images/quiz.jpg" alt="Image 4">
+         <div class="text">Quiz</div>
+     </div>
+    
+     
    </div>
-
-   <div class="more-btn">
-      <a href="courses.php" class="inline-option-btn">view all</a>
-   </div>
+</div>
 
 </section>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<script src="js/scroll.js"></script>
 
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+            // Select the element with ID 'user-btn'
+            const userBtn = document.getElementById('user-btn');
+
+            // Attach an onclick event listener to the element
+            userBtn.onclick = () => {
+                // Redirect to 'logout.php' when the element is clicked
+                window.location.href = 'logout.php';
+            }
+        });
+</script>
    
 </body>
 </html>

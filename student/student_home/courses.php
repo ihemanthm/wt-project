@@ -35,13 +35,7 @@
          <div id="menu-btn" class="fas fa-bars"></div>
          <div id="search-btn" class="fas fa-search"></div>
          <div id="toggle-btn" class="fas fa-sun"></div>
-         <div id="user-btn" class="fas fa-right-from-bracket"></div>
-      </div>
-
-      <div class="profile">
-         <form action="logout.php" method="post">
-         	<button type="submit" class="btn" style="background-color:red;color:white">Log Out</button>
-      	</form>
+         <div id="user-btn" class="fa fa-sign-out"></div>
       </div>
 
    </section>
@@ -327,7 +321,18 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+            // Select the element with ID 'user-btn'
+            const userBtn = document.getElementById('user-btn');
 
+            // Attach an onclick event listener to the element
+            userBtn.onclick = () => {
+                // Redirect to 'logout.php' when the element is clicked
+                window.location.href = 'logout.php';
+            }
+        });
+</script>
    
 </body>
 </html>

@@ -21,9 +21,8 @@
     $stmt->bind_result($old_password_hash);
     $stmt->fetch();
     $stmt->close();
-    echo "$old_password_hash";
     // Check if there is any result
-    if (password_verify($pwd,$old_password_hash)==1){
+    if (password_verify($pwd,$old_password_hash)){
         	$sql="SELECT * FROM students WHERE id=?";
             $stmt=$conn->prepare($sql);
             $stmt->bind_param("s",$usr);

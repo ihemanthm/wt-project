@@ -41,22 +41,4 @@
 	  	echo "Incorrect old password!";
 	  	echo "<a href='password.php'>Click here</a> to try again";
 	 }
-
-
-	// $id=$_SESSION['id'];
-	// $sql="SELECT password FROM students WHERE id='$id'";
-	// mysqli_query($conn,$sql);
-	// $oldpw=$_POST['oldpw'];
-	// $sql="UPDATE students SET password='$newpwd' WHERE id='$id';";
-	
-	// if(mysqli_query($conn,$sql)){
-	// 	echo "Details recorded successfully<br><br>";
-	// 	$_SESSION['password']=$newpwd;
-	// 	header("Location:profile.php");
-	// 	exit();
-	// }
-	// else{
-	// 	echo "Error".$sql."<br>".mysqli_error($conn);
-	// }
-	// $conn->close();
 ?>

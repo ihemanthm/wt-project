@@ -1,7 +1,7 @@
 <?php
 // Database configuration
-    define('HOSTNAME', 'localhost:3306');
+    define('HOSTNAME', 'localhost');
     define('USERNAME', 'root');
-    define('PASSWORD', 'Hemanth083@Kumar');
+    define('PASSWORD', '');
     define('DATABASE', 'wt');
 ?>
