@@ -23,9 +23,10 @@
     $result = $stmt->get_result();
    
     if ($result->num_rows >0) {
-    	$message="This user already existed";
-    	echo $message;
+    	$message="This user already existed.Try Logging in";
+    	echo $message."<br>";
         echo "<script>alert('$message');</script>";
+		echo "<a href='index.html'>Click here</a> to Login.";
         $stmt->close();
     	$conn->close();
     } else {
@@ -51,7 +52,6 @@
 			echo "Error".$sql."<br>".mysqli_error($conn);
 		}
 		echo $usr."<br>";
-		echo $pwd."<br>";
 		echo $gen."<br>";
 		echo $year."<br>";
 		echo $sec."<br>";
