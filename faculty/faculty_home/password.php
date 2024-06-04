@@ -58,9 +58,9 @@
 
    <nav class="navbar">
       <a href="home.php"><i class="fas fa-home"></i><span>Home</span></a>
-      <a href=""><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
-      <a href=""><i class="fas fa-chalkboard-user"></i><span>Results</span></a>
-      <a href=""><i class="fa-solid fa-people-group"></i><span>Attendance</span></a>
+      <a href="data/course_structure.pdf" target="_blank"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+      <a href="results.php"><i class="fas fa-chalkboard-user"></i><span>Results</span></a>
+      <a href="attendance.php"><i class="fa-solid fa-people-group"></i><span>Attendance</span></a>
       <a href="contact.php"><i class="fas fa-headset"></i><span>contact us</span></a>
    </nav>
 
@@ -71,9 +71,9 @@
    <form action="updatePWD.php" method="post" enctype="multipart/form-data">
       <h3>Change password</h3>
       <p>Old Password</p>
-      <input type="text" id="oldpwd" name="oldpwd" placeholder="Enter your old password" maxlength="20" class="box" required>
+      <input type="password" id="oldpwd" name="oldpwd" placeholder="Enter your old password" maxlength="20" class="box" required>
       <p>New Password</p>
-      <input type="text" name="newpwd" id="newpwd" placeholder="Enter your new password" maxlength="20" class="box" required>
+      <input type="password" name="newpwd" id="newpwd" placeholder="Enter your new password" maxlength="20" class="box" required>
       <p>Confirm Password</p>
       <input type="password" name="confirmpwd" id="confirmpwd" placeholder="Confirm your old password" maxlength="20" class="box" required>
       <input type="submit" id="changeButton" value="Change Password" name="submit" class="btn">

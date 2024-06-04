@@ -58,9 +58,9 @@
 
    <nav class="navbar">
       <a href="home.php"><i class="fas fa-home"></i><span>Home</span></a>
-      <a href=""><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
-      <a href=""><i class="fas fa-chalkboard-user"></i><span>Results</span></a>
-      <a href=""><i class="fa-solid fa-people-group"></i><span>Attendance</span></a>
+      <a href="data/course_structure.pdf" target="_blank"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+      <a href="results.php"><i class="fas fa-chalkboard-user"></i><span>Results</span></a>
+      <a href="attendance.php"><i class="fa-solid fa-people-group"></i><span>Attendance</span></a>
       <a href="contact.php"><i class="fas fa-headset"></i><span>contact us</span></a>
    </nav>
 
@@ -82,46 +82,46 @@
       <div class="box-container">
    
          <div class="box">
-            <div class="flex" style="flex-direction:column;">
+            <div class="flex" style=" align-items:stretch; flex-direction:column;">
             	<div style="display:flex;flex-direction:row;">
-            	<span>Name :</span>
+            	<span>Name&nbsp;:</span>
             	<p style="margin-top:7px;margin-left:16px;"><?php echo $_SESSION['name'];?></p>
             	</div>
             	<div style="display:flex;flex-direction:row;">
-            	<span>Gender :</span>
+            	<span>Gender&nbsp;:</span>
             	<p style="margin-top:7px;margin-left:16px;"><?php echo $_SESSION['gender'];?></p>
             	</div>
             </div>
          </div>
    
          <div class="box">
-            <div class="flex" style="flex-direction:column;">
+            <div class="flex" style="align-items:stretch; flex-direction:column;">
             	<div style="display:flex;flex-direction:row;">
-            	<span>ID :</span>
+            	<span>ID&nbsp;:</span>
             	<p style="margin-top:7px;margin-left:16px;"><?php echo $_SESSION['id'];?></p>
             	</div>
             	<div style="display:flex;flex-direction:row;">
-            	<span>Phone :</span>
+            	<span>Phone&nbsp;:</span>
             	<p style="margin-top:7px;margin-left:16px;"><?php echo $_SESSION['phone'];?></p>
             	</div>
             </div>
          </div>
    		
    		<div class="box">
-            <div class="flex" style="flex-direction:column;">
+            <div class="flex" style="align-items:stretch; flex-direction:column;">
                <div style="display:flex;flex-direction:row;">
-            	<span>E-mail :</span>
+            	<span>E-mail&nbsp;:</span>
             	<p style="margin-top:7px;margin-left:16px;"><?php echo $_SESSION['email'];?></p>
             	</div>
                <div style="display:flex;flex-direction:row;">
-            	<span>Subject :</span>
+            	<span>Subject&nbsp;:</span>
             	<p style="margin-top:7px;margin-left:16px;"><?php echo $_SESSION['subject'];?></p>
             	</div>
             </div>
          </div>		
    		
    		<div class="box">
-            <div class="flex">
+            <div class="flex" style="align-items:stretch;">
                <i class="fas fa-comment"></i>
                <div>
                   <span>How are we looking?</span>
