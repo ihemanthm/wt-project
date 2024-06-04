@@ -29,7 +29,7 @@
    
    <section class="flex">
 
-     <p class="logo">Welcome <?php echo explode(" ",$_SESSION['name'])[0]?></p>
+     <p class="logo">Welcome, <?php echo " ",$_SESSION['name'],"!"?></p>
 
       <div class="icons">
          <div id="menu-btn" class="fas fa-bars"></div>
@@ -52,16 +52,16 @@
 
    <div class="profile">
       <img src="images/pic-1.jpg" class="image" alt="">
-      <h3 class="name"><?php echo $_SESSION['name']?></h3>
+      <h3 class="name"><?php echo $_SESSION['id']?></h3>
       <p class="role"> Faculty</p>
       <a href="profile.php" class="btn">view profile</a>
    </div>
 
    <nav class="navbar">
       <a href="home.php"><i class="fas fa-home"></i><span>Home</span></a>
-      <a href=""><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
-      <a href=""><i class="fas fa-chalkboard-user"></i><span>Results</span></a>
-      <a href=""><i class="fa-solid fa-people-group"></i><span>Attendance</span></a>
+      <a href="data/course_structure.pdf" target="_blank"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+      <a href="results.php"><i class="fas fa-chalkboard-user"></i><span>Results</span></a>
+      <a href="attendance.php"><i class="fa-solid fa-people-group"></i><span>Attendance</span></a>
       <a href="contact.php"><i class="fas fa-headset"></i><span>contact us</span></a>
    </nav>
 
@@ -106,7 +106,7 @@
          </div>
          <div class="slide">
              <img src="images/AI_ML.jpeg" alt="Image 2">
-             <div class="text">Artificial Intelligence & Machine Learning</div>
+             <div class="text">AI / ML</div>
          </div>
          <div class="slide">
              <img src="images/programming_club.jpeg" alt="Image 3">
