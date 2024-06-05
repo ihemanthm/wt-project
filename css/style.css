@@ -32,6 +32,14 @@ img {
     font-weight: 700 !important;
 }
 
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    /* Additional styles for your button can be added here */
+  }
+
 /***carousel***/
 .carousel-control-prev, .carousel-control-next {
     filter: invert(100%);
