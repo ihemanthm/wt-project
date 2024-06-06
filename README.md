@@ -45,7 +45,17 @@ This is a simple web page created using HTML, CSS, PHP, JavaScript, and MySQLi a
      password varchar(100),
      subject varchar(20));
   ```
-
+- create another table named reviews as
+  ```bash
+    CREATE TABLE reviews(
+      sno INT AUTO_INCREMENT PRIMARY KEY,
+      id VARCHAR(10),
+      name VARCHAR(50),
+      email VARCHAR(100),
+      phone BIGINT,
+      content VARCHAR(1000),
+      time_stamp DATETIME NOT NULL);
+  ``` 
 ## Installation
 
 1.  Fork this repository
