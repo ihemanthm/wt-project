@@ -5,7 +5,7 @@
    // Check if the user is not logged in
    if (!isset($_SESSION['id'])) {
        // Redirect the user to the login page
-       header("Location: http://localhost/project/index.html");
+       header("Location: http://localhost/wt-project/index.html");
        exit();
    }
 ?>

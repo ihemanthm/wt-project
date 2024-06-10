@@ -1,6 +1,6 @@
 <?php
 	// Including the configuration file
-    require_once '/opt/lampp/htdocs/project/config.php';
+    require_once '/opt/lampp/htdocs/wt-project/config.php';
 
     // Connect to MySQL database
     $conn = mysqli_connect(HOSTNAME,USERNAME,PASSWORD, DATABASE);
@@ -43,7 +43,11 @@
 			echo "Details recorded successfully<br><br>";
 			session_start();
 			$_SESSION['id']=$usr;
+			$_SESSION['name']='';
 			$_SESSION['gender']=$gen;
+			$_SESSION['dob']='';
+            $_SESSION['phone']='';
+            $_SESSION['email']='';
 			$_SESSION['year']=$year;
 			$_SESSION['section']=$sec;
 			header("Location:student_home/home.php");

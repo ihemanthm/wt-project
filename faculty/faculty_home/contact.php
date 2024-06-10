@@ -5,7 +5,7 @@
    // Check if the user is not logged in
    if (!isset($_SESSION['id'])) {
        // Redirect the user to the login page
-       header("Location: http://localhost/project/index.html");
+       header("Location: http://localhost/wt-project/index.html");
        exit();
    }
 ?>
@@ -73,13 +73,13 @@
          <img src="images/contact-img.svg" alt="">
       </div>
 
-      <form action="" method="post">
-         <h3>get in touch</h3>
+      <form action="reviews.php" method="post">
+         <h3>Review Us</h3>
          <input type="text" placeholder="enter your name" name="name" required maxlength="50" class="box">
          <input type="email" placeholder="enter your email" name="email" required maxlength="50" class="box">
-         <input type="number" placeholder="enter your number" name="number" required maxlength="50" class="box">
-         <textarea name="msg" class="box" placeholder="enter your message" required maxlength="1000" cols="30" rows="10"></textarea>
-         <input type="submit" value="send message" class="inline-btn" name="submit">
+         <input type="number" placeholder="enter your number" name="phone" required maxlength="50" class="box">
+         <textarea name="content" class="box" placeholder="enter your review" required maxlength="1000" cols="30" rows="10"></textarea>
+         <input type="submit" value="Send Review" class="inline-btn" name="submit">
       </form>
 
    </div>
@@ -123,7 +123,18 @@
                 // Redirect to 'logout.php' when the element is clicked
                 window.location.href = 'logout.php';
             }
-        });
+   });
+   window.onload = function() {
+    // Get the value of the msg parameter from the URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var msg = urlParams.get('msg');
+
+    // Check if msg parameter exists and is not empty
+    if (msg) {
+        // Display an alert message with the retrieved message
+        alert("Your Response Recorded Successfully.Thank You for your response");
+    }
+}
 </script>
 
    

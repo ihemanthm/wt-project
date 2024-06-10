@@ -12,6 +12,6 @@
 	session_regenerate_id(true);
 
 	// Redirect to the login page or home page
-	header("Location:http://localhost/project/index.html");
+	header("Location:http://localhost/wt-project/index.html");
 	exit();
 ?>
