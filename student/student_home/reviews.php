@@ -18,9 +18,8 @@
    $stmt=$conn->prepare($sql);
    $stmt->bind_param('sssiss',$id,$name,$email,$phone,$content,$currentTime);
    if($stmt->execute()){
-        echo "<script>alert('Thank You for your Review.')</script>";
-        $stmt->close();
-        header("Location:contact.php?msg=1");
-        exit();
+      $stmt->close();
+      header("Location:contact.php?msg=1");
+      exit();
    }
 ?>
