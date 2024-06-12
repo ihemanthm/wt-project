@@ -115,25 +115,25 @@
 <script src="js/script.js"></script>
 <script>
    document.addEventListener('DOMContentLoaded', () => {
-            // Select the element with ID 'user-btn'
-            const userBtn = document.getElementById('user-btn');
+        // Select the element with ID 'user-btn'
+        const userBtn = document.getElementById('user-btn');
+        // Attach an onclick event listener to the element
+        userBtn.onclick = () => {
+            // Redirect to 'logout.php' when the element is clicked
+            window.location.href = 'logout.php';
+        }
+    });
+   window.onload = function(){
+      // Get the value of the msg parameter from the URL
+      var urlParams = new URLSearchParams(window.location.search);
+      var msg = urlParams.get('msg');
 
-            // Attach an onclick event listener to the element
-            userBtn.onclick = () => {
-                // Redirect to 'logout.php' when the element is clicked
-                window.location.href = 'logout.php';
-            }
-        });
-        window.onload = function() {
-    // Get the value of the msg parameter from the URL
-    var urlParams = new URLSearchParams(window.location.search);
-    var msg = urlParams.get('msg');
-
-    // Check if msg parameter exists and is not empty
-    if (msg) {
-        // Display an alert message with the retrieved message
-        alert("Your Response Recorded Successfully.Thank You for your response");
-    }
+      // Check if msg parameter exists and is not empty
+      if (msg){
+         // Display an alert message with the retrieved message
+         alert("Thank You for your response.");
+      }
+   }
 </script>
 
    

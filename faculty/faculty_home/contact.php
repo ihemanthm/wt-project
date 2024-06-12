@@ -125,16 +125,16 @@
             }
    });
    window.onload = function() {
-    // Get the value of the msg parameter from the URL
-    var urlParams = new URLSearchParams(window.location.search);
-    var msg = urlParams.get('msg');
+      // Get the value of the msg parameter from the URL
+      var urlParams = new URLSearchParams(window.location.search);
+      var msg = urlParams.get('msg');
 
-    // Check if msg parameter exists and is not empty
-    if (msg) {
-        // Display an alert message with the retrieved message
-        alert("Your Response Recorded Successfully.Thank You for your response");
-    }
-}
+      // Check if msg parameter exists and is not empty
+      if (msg) {
+         // Display an alert message with the retrieved message
+         alert("Thank You for your response");
+      }
+   }
 </script>
 
    

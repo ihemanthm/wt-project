@@ -13,15 +13,21 @@ This is a simple web page created using HTML, CSS, PHP, JavaScript, and MySQLi a
 
 - HTML
 - CSS
+- Bootstrap
 - PHP
 - JavaScript
 - MySQLi
 ## Pre requirements
-- You need to install XAMPP server application for both windows or Ubuntu.
+
+- You need to install XAMPP server application for both windows and Ubuntu.
 - You need to complete the server setup as well as database setup.
 - Make sure that you have your database login credentials.
-- Start the server as well as database. Modify the `config.php` file by replacing the credentials with your credentials.
-- Create a database and table named students
+- Start the server as well as database.Modify the `config.php` file by replacing the credentials with your credentials.
+- Create a database named wt using the following mysql query
+  ```bash
+    CREATE DATABASE wt;
+  ```
+- Create a table named students as
   ```bash
     CREATE TABLE students(
      id varchar(10) PRIMARY KEY,
@@ -66,22 +72,18 @@ This is a simple web page created using HTML, CSS, PHP, JavaScript, and MySQLi a
     ```
     replace your github username in place of @username.
     You can find and copy this url at the code section in ssh tab in your repositories section.
-3. Set up your local server environment (e.g., XAMPP, WAMP, MAMP).
+3. If you can't do so,just install the zip file of this code and extract its contents.
+4. Set up your local server environment (e.g., XAMPP, WAMP, MAMP).
    
-4. Update the database configuration in `config.php` file.
+5. Update the database configuration in `config.php` file.
 
-5. Open the project in your web browser (place your files in /opt/lampp/htdocs if you are using ubuntu and open using localhost) .
-
-## Screenshots
-
-![Screenshot 1](assets/screenshot-1.png)
-![Screenshot 2](assets/screenshot-2.png)
+6. Open the project in your web browser (place your files in /opt/lampp/htdocs if you are using ubuntu or else C:\\xampp\htdocs\ in windows) .
 
 ## Usage
 
-1. Navigate to the project directory in your terminal.
-2. Start your local server environment.
-3. Open the project in your web browser.(ex: localhost/project/inde.html)
+1. Start your local server environment,probably XAMPP server.
+2. Make sure that you placed the project directory in /htdocs forlder.
+3. Open the project in your web browser.(ex: localhost/wt-project/inde.html)
 4. Explore the web page and interact with its features.
 
 ## Contributing
