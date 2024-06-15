@@ -84,7 +84,7 @@
             <span>EdX</span>
          </div>
          <h3 class="title">Developing Front End Apps with React</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CAD0210EN" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CAD0210EN" target="_blank" class="inline-btn">Enroll</a>
       </div>
 
       <div class="box">
@@ -100,7 +100,7 @@
             <span>EdX</span>
          </div>
          <h3 class="title">Introduction to Java Programming: DSA</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/UC3Mx+IT.1.3x" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/course/UC3Mx+IT.1.3x" target="_blank" class="inline-btn">Enroll</a>
       </div>
 
       <div class="box">
@@ -116,7 +116,7 @@
             <span>EdX</span>
          </div>
          <h3 class="title">Introduction to Cloud Computing</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CC0101EN" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CC0101EN" target="_blank" class="inline-btn">Enroll</a>
       </div>
 
       <div class="box">
@@ -132,7 +132,7 @@
             <span>EdX</span>
          </div>
          <h3 class="title">AI Chatbots without Programming</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CB0103EN" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CB0103EN" target="_blank" class="inline-btn">Enroll</a>
       </div>
 
       <div class="box">
@@ -148,7 +148,7 @@
             <span>EdX</span>
          </div>
          <h3 class="title">Developing Front End Apps with React</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CAD0210EN" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CAD0210EN" target="_blank" class="inline-btn">Enroll</a>
       </div>
 
       <div class="box">
@@ -164,7 +164,7 @@
             <span>EdX</span>
          </div>
          <h3 class="title">Introduction to Java Programming: DSA</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/UC3Mx+IT.1.3x" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/course/UC3Mx+IT.1.3x" target="_blank" class="inline-btn">Enroll</a>
       </div>
 
       <div class="box">
@@ -180,7 +180,7 @@
             <span>EdX</span>
          </div>
          <h3 class="title">Introduction to Cloud Computing</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CC0101EN" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CC0101EN" target="_blank" class="inline-btn">Enroll</a>
       </div>
 
       <div class="box">
@@ -196,7 +196,7 @@
             <span>EdX</span>
          </div>
          <h3 class="title">AI Chatbots without Programming</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CB0103EN" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CB0103EN" target="_blank" class="inline-btn">Enroll</a>
       </div>
       <div class="box">
          <div class="tutor">
@@ -211,7 +211,7 @@
             <span>EdX</span>
          </div>
          <h3 class="title">Developing Front End Apps with React</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CAD0210EN" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CAD0210EN" target="_blank" class="inline-btn">Enroll</a>
       </div>
 
       <div class="box">
@@ -227,7 +227,7 @@
             <span>EdX</span>
          </div>
          <h3 class="title">Introduction to Java Programming: DSA</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/UC3Mx+IT.1.3x" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/course/UC3Mx+IT.1.3x" target="_blank" class="inline-btn">Enroll</a>
       </div>
 
       <div class="box">
@@ -243,7 +243,7 @@
             <span>EdX</span>
          </div>
          <h3 class="title">Introduction to Cloud Computing</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CC0101EN" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CC0101EN" target="_blank" class="inline-btn">Enroll</a>
       </div>
 
       <div class="box">
@@ -259,7 +259,7 @@
             <span>EdX</span>
          </div>
          <h3 class="title">AI Chatbots without Programming</h3>
-         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CB0103EN" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/course/IBM+CB0103EN" target="_blank" class="inline-btn">Enroll</a>
       </div>
 
    </div>
@@ -283,7 +283,7 @@
             <span>EdX | 5 courses</span>
          </div>
          <h3 class="title">Front-End Web Developer : Complete Program</h3>
-         <a href="https://enterprise.edx.org/APSCHE/program/98b7344e-cd44-4a99-9542-09dfdb11d31b" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/program/98b7344e-cd44-4a99-9542-09dfdb11d31b" target="_blank" class="inline-btn">Enroll</a>
       </div>
       <div class="box">
          <div class="tutor">
@@ -298,7 +298,7 @@
             <span>EdX | 5 courses</span>
          </div>
          <h3 class="title">Front-End Web Developer : Complete Program</h3>
-         <a href="https://enterprise.edx.org/APSCHE/program/98b7344e-cd44-4a99-9542-09dfdb11d31b" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/program/98b7344e-cd44-4a99-9542-09dfdb11d31b" target="_blank" class="inline-btn">Enroll</a>
       </div>
       <div class="box">
          <div class="tutor">
@@ -313,7 +313,7 @@
             <span>EdX | 5 courses</span>
          </div>
          <h3 class="title">Front-End Web Developer : Complete Program</h3>
-         <a href="https://enterprise.edx.org/APSCHE/program/98b7344e-cd44-4a99-9542-09dfdb11d31b" class="inline-btn">Enroll</a>
+         <a href="https://enterprise.edx.org/APSCHE/program/98b7344e-cd44-4a99-9542-09dfdb11d31b" target="_blank" class="inline-btn">Enroll</a>
       </div>
    </div>
 </section>

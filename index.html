@@ -8,37 +8,17 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
-
-    <!--JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <style>
-        body{
-            display:none;
-        }
-        .blur-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(5px); /* Adjust the blur intensity as needed */
-            z-index: 9999; /* Ensure it appears above other elements */
-            display: none; /* Hide initially */
-        }
 
-        /* Style for modal dialog */
-    </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
 </head>
-
 <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
@@ -48,6 +28,7 @@
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="" class="nav-item nav-link active">Home</a>
@@ -59,20 +40,19 @@
             </div>
         </div>
     </nav>
-    
     <!-- Navbar End -->
 
     <!--Carousel Start-->
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="5000">
                 <img src="assets/carousel-1.jpeg" class="d-block w-100 caption-with-opacity" alt="carousel-1_image">
-                <div class="carousel-caption d-none d-md-block text-center">
+                <div class="carousel-caption text-center">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-sm-10 col-lg-8">
@@ -88,7 +68,7 @@
             </div>
             <div class="carousel-item" data-bs-interval="5000">
                 <img src="assets/carousel-2.jpg" class="d-block w-100 caption-with-opacity" alt="carousel-2_image">
-                <div class="carousel-caption d-none d-md-block text-center">
+                <div class="carousel-caption text-center">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-sm-10 col-lg-8">
@@ -104,7 +84,7 @@
             </div>
             <div class="carousel-item" data-bs-interval="5000">
                 <img src="assets/carousel-3.jpg" class="d-block w-100 caption-with-opacity" alt="carousel-3_image">
-                <div class="carousel-caption d-none d-md-block text-center">
+                <div class="carousel-caption text-center">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-sm-10 col-lg-8">
@@ -120,14 +100,15 @@
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <!-- signup-modal -->
     <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -148,15 +129,15 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-sm-6">
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <h5 class="mb-3">Skilled Instructors</h5>
-                            <p>"Expert instructors are ready to guide you to success."</p>
+                            <p>Expert instructors are ready to guide you to success.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-sm-6">
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <h5 class="mb-3">Advanced Classes</h5>
@@ -164,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-3 col-sm-6">
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <h5 class="mb-3">Real World Projects</h5>
@@ -172,7 +153,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="col-lg-3 col-sm-6">
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <h5 class="mb-3">Trending Domains</h5>
@@ -185,18 +166,17 @@
     </div>
     <!-- Service End -->
 
-
     <!-- About Start -->
     <section id="about">
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="col-lg-6" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="img-fluid position-absolute w-100 h-100" src="assets/about.jpeg" alt="" style="object-fit: cover;">
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-6">
                     <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
                     <h1 class="mb-4">Welcome to CS Connect</h1>
                     <p class="mb-4">Computer science is the heartbeat of the digital age, encompassing the theory, experimentation, and engineering behind computing systems.</p>
@@ -230,19 +210,18 @@
     </section>
     <!-- About End -->
 
-
     <!-- Categories Start -->
     <section id="courses">
     <div class="container-xxl py-5 category">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="text-center">
                 <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
                 <h1 class="mb-5">Courses Categories</h1>
             </div>
             <div class="row g-3">
                 <div class="col-lg-7 col-md-6">
                     <div class="row g-3">
-                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="col-lg-12 col-md-12">
                             <a class="position-relative d-block overflow-hidden" href="https://en.wikipedia.org/wiki/Software_development" target="_blank">
                                 <img class="img-fluid" src="assets/category1.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
@@ -250,7 +229,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-6 col-md-12">
                             <a class="position-relative d-block overflow-hidden" href="https://en.wikipedia.org/wiki/User_interface" target="_blank">
                                 <img class="img-fluid" src="assets/category2.jpeg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
@@ -258,7 +237,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                        <div class="col-lg-6 col-md-12">
                             <a class="position-relative d-block overflow-hidden" href="https://en.wikipedia.org/wiki/Data_science" target="_blank">
                                 <img class="img-fluid" src="assets/category3.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
@@ -268,7 +247,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                <div class="col-lg-5 col-md-6" style="min-height: 350px;">
                     <a class="position-relative d-block h-100 overflow-hidden" href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank">
                         <img class="img-fluid position-absolute w-100 h-100" src="assets/category4.png" alt="" style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
@@ -279,18 +258,18 @@
             </div>
         </div>
     </div>
+    </section>
     <!-- Categories Start -->
-
 
     <!-- Courses Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="text-center">
                 <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
                 <h1 class="mb-5">Popular Courses</h1>
             </div>
             <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 ">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="assets/course-1.jpg" alt="">
@@ -309,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4 col-md-6" >
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="assets/course-2.jpg" alt="">
@@ -328,7 +307,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-4 col-md-6" >
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="assets/course-3.jpg" alt="">
@@ -350,19 +329,17 @@
             </div>
         </div>
     </div>
-    </section>
-    <!-- Courses End -->
-
+    <!-- Cources End -->
 
     <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="text-center" >
                 <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
                 <h1 class="mb-5">Expert Instructors</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-md-6 " >
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="assets/faculty-1.jpeg" alt="">
@@ -386,7 +363,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-md-6" >
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="assets/faculty-2.jpeg" alt="">
@@ -410,7 +387,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-3 col-md-6">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="assets/faculty-3.jpeg" alt="">
@@ -434,7 +411,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="col-lg-3 col-md-6" >
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="assets/faculty-4.jpg" alt="">
@@ -463,9 +440,8 @@
     </div>
     <!-- Team End -->
 
-
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center">
                 <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
@@ -527,27 +503,26 @@
     </div>
     <!-- Testimonial End -->
         
-
-    <!-- Footer Start -->
+    <!--Footer Start -->
     <section id="contact">
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <h4 class="text-white mb-3">Quick Links</h4>
                     <a class="btn btn-link" href="#about">About Us</a>
                     <a class="btn btn-link" href="mailto:hodcse@rguktrkv.ac.in">Contact Us</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
+                    <h4 class="text-white mb-3">Contact US</h4>
                     <p class="mb-2">CSE Dept, RK Valley, IIIT</p>
                     <p class="mb-2">+91 7075690330</p>
                     <p class="mb-2">cse@rguktrkv.ac.in</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" style="overflow: hidden;" href="https://www.linked.com/company/src-rgukt-rkvalley/" target="_blank"><img src="assets/LinkedIn_circular.png" style="object-fit: contain; width: 35px; height: 35px;" alt=""></a>
-                        <a class="btn btn-outline-light btn-social" style="overflow: hidden;" href="mailto:hodcse@rguktrkv.ac.in"><img src="assets/gmail_circular.png" style="object-fit: contain; width: 75px; height: 75px;" alt=""></a>
-                        <a class="btn btn-outline-light btn-social" style="overflow: hidden;" href=""><img src="assets/x_circular.png" style="object-fit: contain; width: 60px; height: 60px;" alt=""></a>
-                        <a class="btn btn-outline-light btn-social" style="overflow: hidden;" href="https://www.instagram.com/rgukt_rkv_cse?igsh=ajE2czN6MGhheW1t" target="_blank"><img src="assets/insta_circular.jpeg" style="object-fit: contain; width: 48px; height: 48px;" alt=""></a>
+                        <a class="btn btn-outline-light btn-social" style="overflow: hidden;" href="https://www.linked.com/company/src-rgukt-rkvalley/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a class="btn btn-outline-light btn-social" style="overflow: hidden;" href="mailto:hodcse@rguktrkv.ac.in"><i class="fa-solid fa-envelope"></i></a>
+                        <a class="btn btn-outline-light btn-social" style="overflow: hidden;" href="https://github.com/Student-Recreation-Center-CSE-RKV" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social" style="overflow: hidden;" href="https://www.instagram.com/rgukt_rkv_cse?igsh=ajE2czN6MGhheW1t" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -577,8 +552,8 @@
                     <h4 class="text-white mb-3">FeedBack</h4>
                     <p>Your Feedback is highly appreciated...</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"><a href="mailto:cse@rguktrkv.ac.in">Mail Us</a></button>
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Write here...">
+                        <button class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"><a href="mailto:cse@rguktrkv.ac.in" style="color:white">Mail Us</a></button>
                     </div>
                 </div>
             </div>
@@ -587,8 +562,8 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-light" href="#">Cse Dept</a>, All Rights Reserved.
-                        Designed By <a class="border-bottom text-light" href="https://htmlcodex.com">Team WTF</a><br><br>
+                        &copy; <a class="border-bottom text-light" href="https://www.rguktrkv.ac.in" target="_blank">Cse Dept</a>, All Rights Reserved.
+                        Designed By <a class="border-bottom text-light" href="">Team WTF</a><br><br>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -605,24 +580,12 @@
     </section>
     <!-- Footer End -->
 
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
-        <div class="toast-header">
-          <strong class="me-auto">You got a Message</strong>
-          <small>1 min ago</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-          Welcome to CS Connect
-        </div>
-    </div>
-
     <!-- Back to Top -->
-    <a id="back-to-top" style="display: none;" class="btn btn-lg btn-primary btn-lg-square back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
-        <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"/>
-      </svg></a>
+    <a id="back-to-top" style="display:none;" class="btn btn-lg btn-primary btn-lg-square back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+        <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"/></svg>
+    </a>
     <script>
-        window.onscroll = function() {scrollFunction()};
-
+        window.onscroll = function(){scrollFunction()};
         function scrollFunction() {
             if (document.documentElement.scrollTop > 20) {
                 document.getElementById("back-to-top").style.display = "block";
