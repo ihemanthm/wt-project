@@ -8,22 +8,9 @@ img {
     width:100%;
     height:100%;
 }
-.toast {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    z-index: 1000;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.5s ease;
-}
-.toast.show {
-    opacity: 1; /* Show when the "show" class is added */
-}
 .icon{
     mix-blend-mode: color-burn;
 }
-
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -37,7 +24,6 @@ img {
     bottom: 20px;
     right: 20px;
     display: none;
-    /* Additional styles for your button can be added here */
   }
 
 /***carousel***/
@@ -56,32 +42,28 @@ img {
 a{
     text-decoration:none;
     color:black;
-
 }
+
 /*** Button***/
 .btn {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
-    transition: .5s;
+    transition:0.5s;
 }
-
 .btn-square {
     width: 38px;
     height: 38px;
 }
-
 .btn-sm-square {
     width: 32px;
     height: 32px;
 }
-
 .btn-lg-square {
     width: 48px;
     height: 48px;
 }
 
 /*** Signup button ***/
-
 .signup-btn{
     background-color: #FFA500;
     color: white;
@@ -89,7 +71,6 @@ a{
     height: 48px;
     margin: 15px 10px;
 }
-
 .signup-btn,
 .btn-square,
 .btn-sm-square,
@@ -102,7 +83,6 @@ a{
     border-radius: 0px;
 }
 
-
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;
@@ -112,7 +92,6 @@ a{
     vertical-align: middle;
     margin-left: 8px;
 }
-
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
@@ -151,7 +130,6 @@ a{
         visibility: hidden;
         transition: .5s;
     }
-
     .navbar .dropdown-menu.fade-down {
         top: 100%;
         transform: rotateX(-75deg);
@@ -166,69 +144,6 @@ a{
         opacity: 1;
     }
 }
-
-
-/*** Header carousel ***/
-@media (max-width: 768px) {
-    .header-carousel .owl-carousel-item {
-        position: relative;
-        min-height: 500px;
-    }
-    
-    .header-carousel .owl-carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.header-carousel .owl-nav {
-    position: absolute;
-    top: 50%;
-    right: 8%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-}
-
-.header-carousel .owl-nav .owl-prev,
-.header-carousel .owl-nav .owl-next {
-    margin: 7px 0;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    background: transparent;
-    border: 1px solid #FFFFFF;
-    font-size: 22px;
-    transition: .5s;
-}
-
-.header-carousel .owl-nav .owl-prev:hover,
-.header-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
-    border-color: var(--primary);
-}
-
-.page-header {
-    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/carousel-1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.page-header-inner {
-    background: rgba(15, 23, 43, .7);
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-    color: var(--light);
-}
-
-
 /*** Section Title ***/
 .section-title {
     position: relative;

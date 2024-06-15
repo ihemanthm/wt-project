@@ -117,15 +117,14 @@ function checkPassword(password){
 </script>
 <script>
    document.addEventListener('DOMContentLoaded', () => {
-            // Select the element with ID 'user-btn'
-            const userBtn = document.getElementById('user-btn');
-
-            // Attach an onclick event listener to the element
-            userBtn.onclick = () => {
-                // Redirect to 'logout.php' when the element is clicked
-                window.location.href = 'logout.php';
-            }
-        });
+        // Select the element with ID 'user-btn'
+        const userBtn = document.getElementById('user-btn');
+        // Attach an onclick event listener to the element
+        userBtn.onclick = () => {
+            // Redirect to 'logout.php' when the element is clicked
+            window.location.href = 'logout.php';
+        }
+    });
 </script>
 </body>
 </html>
