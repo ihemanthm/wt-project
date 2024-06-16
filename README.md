@@ -76,11 +76,13 @@ This is a simple web page created using HTML, CSS, PHP, JavaScript, and MySQLi a
 
 <img align="right" width="300" src="./assets/screenshot2.png" alt="Modify config.php file" />
 
-- Now move this wt-folder to `/opt/lampp/htdocs` location if you are using ubuntu or to `C:\xampp\htdocs` if you are using windows.
+- Now move this wt-project to `/opt/lampp/htdocs` location if you are using ubuntu or to `C:\xampp\htdocs` if you are using windows.
 
 - Now goto https://localhost/phpmyadmin in your browser to create a database and some tables whose schema is mentioned above.
 
 - Open the `cofig.php` file and replace the credentials with your database credentials and also replace the database name with the one you have.
+
+- That's it.You have set up this project in your device.Now please go to https://localhost/index.html to view this project. 
 
 ## Installation
 
