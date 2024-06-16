@@ -82,7 +82,7 @@ This is a simple web page created using HTML, CSS, PHP, JavaScript, and MySQLi a
 
 - Open the `cofig.php` file and replace the credentials with your database credentials and also replace the database name with the one you have.
 
-- That's it.You have set up this project in your device.Now please go to https://localhost/index.html to view this project. 
+- That's it.You have set up this project in your device.Now please go to https://localhost/wt-project/index.html to view this project. 
 
 ## Installation
 
