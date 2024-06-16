@@ -61,7 +61,27 @@ This is a simple web page created using HTML, CSS, PHP, JavaScript, and MySQLi a
       phone BIGINT,
       content VARCHAR(1000),
       time_stamp DATETIME NOT NULL);
-  ``` 
+  ```
+## For Beginners
+
+<img align="right" width="300" src="./assets/screenshot1.png" alt="Download zip file" />
+
+- Firstly Clone this repository into your local storage.To do that go to https://github.com/ihemanthm/wt-project ,and there click on the Code button.
+
+- Once you clicked that button you will find a Download Zip option.Click that to download the zip file of this project.
+
+- Now you have the source code in you laptop as a zip file.
+
+- Extract the contents of that zip file and then rename the folder name from "wt-project-main" to "wt-project"
+
+<img align="right" width="300" src="./assets/screenshot2.png" alt="Modify config.php file" />
+
+- Now move this wt-folder to `/opt/lampp/htdocs` location if you are using ubuntu or to `C:\xampp\htdocs` if you are using windows.
+
+- Now goto https://localhost/phpmyadmin in your browser to create a database and some tables whose schema is mentioned above.
+
+- Open the `cofig.php` file and replace the credentials with your database credentials and also replace the database name with the one you have.
+
 ## Installation
 
 1.  Fork this repository
