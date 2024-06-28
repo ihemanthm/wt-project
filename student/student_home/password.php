@@ -71,9 +71,9 @@
    <form action="updatePWD.php" method="post" enctype="multipart/form-data">
       <h3>Change password</h3>
       <p>Old Password</p>
-      <input type="password" id="oldpwd" name="oldpwd" placeholder="Enter your old password" maxlength="20" class="box" required>
+      <input type="text" id="oldpwd" name="oldpwd" placeholder="Enter your old password" maxlength="20" class="box" required>
       <p>New Password</p>
-      <input type="password" name="newpwd" id="newpwd" placeholder="Enter your new password" maxlength="20" class="box" required>
+      <input type="text" name="newpwd" id="newpwd" placeholder="Enter your new password" maxlength="20" class="box" required>
       <p>Confirm Password</p>
       <input type="password" name="confirmpwd" id="confirmpwd" placeholder="Confirm your old password" maxlength="20" class="box" required>
       <input type="submit" id="changeButton" value="Change Password" name="submit" class="btn">

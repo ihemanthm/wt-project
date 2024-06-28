@@ -1,6 +1,6 @@
 <?php
 	// Including the configuration file
-    require_once '../config.php';
+    require_once '/opt/lampp/htdocs/wt-project/config.php';
 
     // Connect to MySQL database
     $conn = mysqli_connect(HOSTNAME,USERNAME,PASSWORD, DATABASE);

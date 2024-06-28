@@ -3,7 +3,7 @@
 	#header("Location:profile.php");
 	
    // Including the configuration file
-   require_once '../../config.php';
+   require_once '/opt/lampp/htdocs/wt-project/config.php';
 
    // Connect to MySQL database
    $conn = new mysqli(HOSTNAME,USERNAME,PASSWORD, DATABASE);

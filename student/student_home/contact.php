@@ -8,6 +8,18 @@
        header("Location: http://localhost/wt-project/index.html");
        exit();
    }
+   
+   require_once '/opt/lampp/htdocs/wt-project/config.php';
+   $conn = mysqli_connect(HOSTNAME, USERNAME, PASSWORD, DATABASE);
+
+	// Check connection
+	if (!$conn) {
+	    die("Connection failed: " . mysqli_connect_error());
+	}
+
+	// SQL query to fetch data
+	$sql = "SELECT * FROM reviews WHERE id LIKE 'R%';"; // Modify the query based on your table structure
+	$result = $conn->query($sql);
 ?>
 <html lang="en">
 <head>
@@ -110,6 +122,35 @@
 
 </section>
 
+<section class="reviews">
+
+   <h1 class="heading">student's reviews</h1>
+
+   <div class="box-container">
+
+	<?php 
+		if($result->num_rows>0){
+			while($row=$result->fetch_assoc()){
+				$msg=$row['content'];
+				$name=$row['name'];
+				$email=$row['email'];
+				echo "<div class='box'>
+         				<p>".$msg."</p>
+         				<div class='student'>
+            				<img src='images/none.jpeg' alt=''>
+            				<div>
+               					<h3>".$name."</h3>
+               					<div class='stars'>".$email."</div>
+            				</div>
+         				</div>
+      				   </div>";
+			}
+		}
+	?>
+
+   </div>
+
+</section>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
